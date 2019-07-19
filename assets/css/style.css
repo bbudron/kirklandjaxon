@@ -59,21 +59,19 @@
 }
 
 .page2-bio-text > p {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 @media screen and (max-width:991px) {
     .page2-container {
         margin: 0 15px 25px 15px;
     }
-    
 }
 
 @media screen and (max-width:900px) {
     .page2-container {
         max-width: 800px;
     }
-    
 }
 
 @media screen and (max-width:600px) {
@@ -147,11 +145,21 @@
     align-items: baseline
 }
 
-.page5-links>h3 {
+.page5-links > h3 {
     font-family: Quicksand;
     font-size: 25px;
     letter-spacing: -1.5px
 }
+
+.pagesuccess-title {
+    font-family: "Days One";
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    margin: 50px 0;
+    color: white;
+}
+
 .top-music {
     max-width: 100%;
     text-align: center;
@@ -164,7 +172,6 @@
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-
 }
 
 .songs-row {
@@ -184,7 +191,6 @@
     box-shadow: 4px 3px 4px black;
 }
 
-
 .video-title {
     font-size: 22px;
     text-align: center;
@@ -193,8 +199,6 @@
     color: #3c4858;
     margin-bottom: 30px;
 }
-
-
 
 #song1 {
     align-self: center;
@@ -211,6 +215,13 @@
 }
 
 #song3 {
+    align-self: center;
+    width: 100%;
+    margin: 45px 0px 0PX;
+    padding: 0px 40px;
+}
+
+#song4 {
     align-self: center;
     width: 100%;
     margin: 45px 0px;
