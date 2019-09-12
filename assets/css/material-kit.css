@@ -733,6 +733,7 @@ a:hover {
     .index-page {
         overflow-x: hidden
     }
+    
     .main.main-raised {
         margin-top: -30px
     }
@@ -1002,13 +1003,13 @@ footer .copyright {
 
 .index-page .brand {
     color: #fff;
-    text-align: center
+    text-align: center;
 }
 
 .index-page .brand h3 {
     font-size: 1.313rem;
     max-width: 500px;
-    margin: 20px auto 0
+    margin: 20px auto 0;
 }
 
 .index-page {
