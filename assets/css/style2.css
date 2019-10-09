@@ -57,3 +57,75 @@ img {
     color: #fff;
     text-align: center;
 }
+
+.inactive {
+    color: rgb(231, 231, 233);
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+    margin: 0 8px;
+    font-weight: bold;
+}
+
+.inactive:visited { 
+
+}
+
+.inactive:focus { 
+    color: rgb(144, 144, 150);
+}
+
+.inactive:hover { 
+    color: rgb(144, 144, 150);
+    cursor: pointer;
+}
+
+.inactive:active { 
+    color: rgb(144, 144, 150);
+}
+
+.active {
+    color: rgb(234, 230, 31);
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+    margin: 0 8px;
+    font-weight: bold;
+}
+
+.active:visited { 
+
+}
+.active:focus { 
+    color: rgb(234, 230, 31);
+}
+
+.active:hover { 
+    color: rgb(234, 230, 31);
+    cursor: pointer;
+}
+
+.active:active { 
+    color: rgb(234, 230, 31);
+}
+
+br {
+    display: block;
+    content: "";
+    margin-top: 5px;
+}
+
+#order {
+    width: 70px;
+    height: 25px;
+    margin: 10px auto 0;
+}
+
+#order:hover {
+    cursor: pointer;
+}
+
+#description {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
