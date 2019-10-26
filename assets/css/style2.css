@@ -129,3 +129,61 @@ br {
     margin-bottom: 10px;
     font-weight: bold;
 }
+
+#link-container {
+padding-right: 65px;
+}
+
+#vertical-container {
+    flex-flow: column nowrap;
+    height: 50px;	
+    overflow: hidden;
+    position: fixed;
+    background: none;
+    color: white;
+    width: 100px;
+}
+
+#vertical-container p {
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    margin: 0;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    font-family: "Days One";
+    /* Starting position */
+    -moz-transform:translateY(20%);
+    -webkit-transform:translateY(20%);	
+    transform:translateY(20%);
+    /* Apply animation to this element */	
+    -moz-animation: fast 1s linear infinite alternate;
+    -webkit-animation: fast 1s linear infinite alternate;
+    animation: fast 1s linear infinite alternate;
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes fast {
+    0%   { -moz-transform: translateY(20%); }
+    100% { -moz-transform: translateY(-60%); }
+}
+
+@-webkit-keyframes fast {
+    0%   { -webkit-transform: translateY(20%); }
+    100% { -webkit-transform: translateY(-20%); }
+}
+
+@keyframes fast {
+    0%   { 
+        -moz-transform: translateY(20%); /* Browser bug fix */
+        -webkit-transform: translateY(20%); /* Browser bug fix */
+        transform: translateY(20%); 		
+    }
+
+    100% { 
+        -moz-transform: translateY(-20%); /* Browser bug fix */
+        -webkit-transform: translateY(-20%); /* Browser bug fix */
+        transform: translateY(-20%); 
+    }
+}
