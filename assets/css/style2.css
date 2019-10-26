@@ -67,20 +67,18 @@ img {
     font-weight: bold;
 }
 
-.inactive:visited { 
+.inactive:visited {}
 
-}
-
-.inactive:focus { 
+.inactive:focus {
     color: rgb(144, 144, 150);
 }
 
-.inactive:hover { 
+.inactive:hover {
     color: rgb(144, 144, 150);
     cursor: pointer;
 }
 
-.inactive:active { 
+.inactive:active {
     color: rgb(144, 144, 150);
 }
 
@@ -93,19 +91,18 @@ img {
     font-weight: bold;
 }
 
-.active:visited { 
+.active:visited {}
 
-}
-.active:focus { 
+.active:focus {
     color: rgb(234, 230, 31);
 }
 
-.active:hover { 
+.active:hover {
     color: rgb(234, 230, 31);
     cursor: pointer;
 }
 
-.active:active { 
+.active:active {
     color: rgb(234, 230, 31);
 }
 
@@ -131,33 +128,32 @@ br {
 }
 
 #link-container {
-padding-right: 65px;
+    padding-right: 65px;
 }
 
 #vertical-container {
     flex-flow: column nowrap;
-    height: 50px;	
+    height: 50px;
     overflow: hidden;
     position: fixed;
     background: none;
     color: white;
-    width: 100px;
 }
 
 #vertical-container p {
     position: absolute;
     width: 100%;
-    height: 120%;
+    height: 100%;
     margin: 0;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 12px;
+    line-height: 12px;
     text-align: center;
     font-family: "Days One";
     /* Starting position */
-    -moz-transform:translateY(20%);
-    -webkit-transform:translateY(20%);	
-    transform:translateY(20%);
-    /* Apply animation to this element */	
+    -moz-transform: translateY(20%);
+    -webkit-transform: translateY(20%);
+    transform: translateY(20%);
+    /* Apply animation to this element */
     -moz-animation: fast 1s linear infinite alternate;
     -webkit-animation: fast 1s linear infinite alternate;
     animation: fast 1s linear infinite alternate;
@@ -165,25 +161,39 @@ padding-right: 65px;
 
 /* Move it (define the animation) */
 @-moz-keyframes fast {
-    0%   { -moz-transform: translateY(20%); }
-    100% { -moz-transform: translateY(-60%); }
+    0% {
+        -moz-transform: translateY(20%);
+    }
+
+    100% {
+        -moz-transform: translateY(-60%);
+    }
 }
 
 @-webkit-keyframes fast {
-    0%   { -webkit-transform: translateY(20%); }
-    100% { -webkit-transform: translateY(-20%); }
+    0% {
+        -webkit-transform: translateY(20%);
+    }
+
+    100% {
+        -webkit-transform: translateY(-20%);
+    }
 }
 
 @keyframes fast {
-    0%   { 
-        -moz-transform: translateY(20%); /* Browser bug fix */
-        -webkit-transform: translateY(20%); /* Browser bug fix */
-        transform: translateY(20%); 		
+    0% {
+        -moz-transform: translateY(20%);
+        /* Browser bug fix */
+        -webkit-transform: translateY(20%);
+        /* Browser bug fix */
+        transform: translateY(20%);
     }
 
-    100% { 
-        -moz-transform: translateY(-20%); /* Browser bug fix */
-        -webkit-transform: translateY(-20%); /* Browser bug fix */
-        transform: translateY(-20%); 
+    100% {
+        -moz-transform: translateY(-20%);
+        /* Browser bug fix */
+        -webkit-transform: translateY(-20%);
+        /* Browser bug fix */
+        transform: translateY(-20%);
     }
 }
