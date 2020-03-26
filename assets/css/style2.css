@@ -127,10 +127,6 @@ br {
     font-weight: bold;
 }
 
-#link-container {
-    padding-right: 65px;
-}
-
 #vertical-container {
     flex-flow: column nowrap;
     height: 50px;
