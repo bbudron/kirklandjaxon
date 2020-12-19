@@ -30,13 +30,13 @@
 
 .page2-title {
     display: inline;
-    font-family: Righteous;
+    font-family: PremiumUltra2;
     font-size: 43px;
-    color: rgb(51, 50, 50);
+    color: rgb(255, 255, 255);
 }
 
 .page2-title-container {
-    text-align: left;
+    text-align: center;
     margin: 0 0 20px 0
 }
 
@@ -82,10 +82,7 @@
     .page2-title-container {
         margin: 0 5px 0 5px
     }
-    .page2-title-container {
-        text-align: center;
-        margin: 0 0 20px 0
-    }
+
     .page2-image {
         margin-left: 15%;
         width: 70%;

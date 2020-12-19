@@ -57,3 +57,168 @@ img {
     color: #fff;
     text-align: center;
 }
+
+.inactive {
+    color: rgb(231, 231, 233);
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+    margin: 0 8px;
+    font-weight: bold;
+}
+
+.inactive:visited {}
+
+.inactive:focus {
+    color: rgb(144, 144, 150);
+}
+
+.inactive:hover {
+    color: rgb(144, 144, 150);
+    cursor: pointer;
+}
+
+.inactive:active {
+    color: rgb(144, 144, 150);
+}
+
+.active {
+    color: rgb(234, 230, 31);
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+    margin: 0 8px;
+    font-weight: bold;
+}
+
+.active:visited {}
+
+.active:focus {
+    color: rgb(234, 230, 31);
+}
+
+.active:hover {
+    color: rgb(234, 230, 31);
+    cursor: pointer;
+}
+
+.active:active {
+    color: rgb(234, 230, 31);
+}
+
+br {
+    display: block;
+    content: "";
+    margin-top: 5px;
+}
+
+#order {
+    width: 70px;
+    height: 25px;
+    margin: 10px auto 0;
+}
+
+#order:hover {
+    cursor: pointer;
+}
+
+#description {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#vertical-container {
+    flex-flow: column nowrap;
+    height: 50px;
+    overflow: hidden;
+    position: fixed;
+    background: none;
+    color: white;
+}
+
+#vertical-container p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    font-family: "Days One";
+    /* Starting position */
+    -moz-transform: translateY(20%);
+    -webkit-transform: translateY(20%);
+    transform: translateY(20%);
+    /* Apply animation to this element */
+    -moz-animation: fast 1s linear infinite alternate;
+    -webkit-animation: fast 1s linear infinite alternate;
+    animation: fast 1s linear infinite alternate;
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes fast {
+    0% {
+        -moz-transform: translateY(20%);
+    }
+
+    100% {
+        -moz-transform: translateY(-60%);
+    }
+}
+
+@-webkit-keyframes fast {
+    0% {
+        -webkit-transform: translateY(20%);
+    }
+
+    100% {
+        -webkit-transform: translateY(-20%);
+    }
+}
+
+@keyframes fast {
+    0% {
+        -moz-transform: translateY(20%);
+        /* Browser bug fix */
+        -webkit-transform: translateY(20%);
+        /* Browser bug fix */
+        transform: translateY(20%);
+    }
+
+    100% {
+        -moz-transform: translateY(-20%);
+        /* Browser bug fix */
+        -webkit-transform: translateY(-20%);
+        /* Browser bug fix */
+        transform: translateY(-20%);
+    }
+}
+
+#reveal1 {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+#reveal1.visible {
+    opacity: 1;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+}
+
+.music_video {
+    width: 800px;
+    height: 800px;
+    background-color: aqua;
+}
