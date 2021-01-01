@@ -772,6 +772,7 @@ a:hover {
 
 form {
     margin-bottom: 1.125rem
+    width: 300px
 }
 
 .card form {
@@ -852,7 +853,9 @@ form {
 }
 
 .img-raised {
-    box-shadow: 0 5px 15px -8px rgba(0, 0, 0, .24), 0 8px 10px -5px rgba(0, 0, 0, .2)
+    box-shadow: 
+        0 5px 15px -8px rgba(0, 0, 0, .24), 
+        0 0px 10px -5px rgba(0, 0, 0, .2)
 }
 
 .rounded {
@@ -1022,20 +1025,20 @@ footer .copyright {
     margin-right: 20px;
     margin-top: -40px;
     padding: 20px 0;
-    margin-bottom: 15px
+    margin-bottom: 15px;
 }
 
 .card-login .card-body {
-    padding: 0 30px 0 10px
+    padding: 0 30px 0 10px;
 }
 
 .card-login .input-group {
     padding-bottom: 7px;
-    margin: 27px 0 0 0
+    margin: 27px 0 0 0;
 }
 
 .card-login .form {
-    min-height: 420px
+    min-height: 420px;
 }
 
 .index-page .page-header {
