@@ -222,3 +222,13 @@ br {
     height: 800px;
     background-color: aqua;
 }
+
+.page4-title {
+    font-family: "Days One";
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: white;
+}

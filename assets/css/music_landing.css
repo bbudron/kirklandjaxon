@@ -1,0 +1,670 @@
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fafafa
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
+}
+
+a:focus,
+a:hover {
+    color: #fff;
+    text-shadow: 0 0 20px rgba(255, 255, 255, .6);
+    text-decoration: none
+}
+
+img {
+    vertical-align: middle;
+    border-style: none
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto
+}
+
+.mr-auto {
+    margin-right: auto !important
+}
+
+
+.ml-auto {
+    margin-left: auto !important
+}
+
+.page-header {
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    margin: -100px 0 0 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    align-items: center
+}
+
+.index-page {
+    color: #fff;
+    text-align: center;
+}
+
+.inactive {
+    color: rgb(231, 231, 233);
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+    margin: 0 8px;
+    font-weight: bold;
+}
+
+.inactive:visited {}
+
+.inactive:focus {
+    color: rgb(144, 144, 150);
+}
+
+.inactive:hover {
+    color: rgb(144, 144, 150);
+    cursor: pointer;
+}
+
+.inactive:active {
+    color: rgb(144, 144, 150);
+}
+
+.active {
+    color: rgb(234, 230, 31);
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+    margin: 0 8px;
+    font-weight: bold;
+}
+
+.active:visited {}
+
+.active:focus {
+    color: rgb(234, 230, 31);
+}
+
+.active:hover {
+    color: rgb(234, 230, 31);
+    cursor: pointer;
+}
+
+.active:active {
+    color: rgb(234, 230, 31);
+}
+
+br {
+    display: block;
+    content: "";
+    margin-top: 5px;
+}
+
+#order {
+    width: 70px;
+    height: 25px;
+    margin: 10px auto 0;
+}
+
+#order:hover {
+    cursor: pointer;
+}
+
+#description {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#vertical-container {
+    flex-flow: column nowrap;
+    height: 50px;
+    overflow: hidden;
+    position: fixed;
+    background: none;
+    color: white;
+}
+
+#vertical-container p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    font-family: "Days One";
+    /* Starting position */
+    -moz-transform: translateY(20%);
+    -webkit-transform: translateY(20%);
+    transform: translateY(20%);
+    /* Apply animation to this element */
+    -moz-animation: fast 1s linear infinite alternate;
+    -webkit-animation: fast 1s linear infinite alternate;
+    animation: fast 1s linear infinite alternate;
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes fast {
+    0% {
+        -moz-transform: translateY(20%);
+    }
+
+    100% {
+        -moz-transform: translateY(-60%);
+    }
+}
+
+@-webkit-keyframes fast {
+    0% {
+        -webkit-transform: translateY(20%);
+    }
+
+    100% {
+        -webkit-transform: translateY(-20%);
+    }
+}
+
+@keyframes fast {
+    0% {
+        -moz-transform: translateY(20%);
+        /* Browser bug fix */
+        -webkit-transform: translateY(20%);
+        /* Browser bug fix */
+        transform: translateY(20%);
+    }
+
+    100% {
+        -moz-transform: translateY(-20%);
+        /* Browser bug fix */
+        -webkit-transform: translateY(-20%);
+        /* Browser bug fix */
+        transform: translateY(-20%);
+    }
+}
+
+#reveal1 {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+#reveal1.visible {
+    opacity: 1;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+}
+
+.music_video {
+    width: 800px;
+    height: 800px;
+    background-color: aqua;
+}
+
+.page4-title {
+    font-family: "Days One";
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    margin: 18px 0 20px 0;
+    color: white;
+}
+
+input {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit
+}
+
+input {
+    overflow: visible
+}
+
+
+
+
+
+
+
+
+
+
+.gradient-background {
+    background: linear-gradient(106deg, #911edc, #2d0066, #000000, #6f6f6f, #680089);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: gradient-background 11s ease infinite;
+    -moz-animation: gradient-background 11s ease infinite;
+    animation: gradient-background 11s ease infinite;
+}
+
+@-webkit-keyframes gradient-background {
+    0%{background-position:0% 75%}
+    50%{background-position:100% 26%}
+    100%{background-position:0% 75%}
+}
+@-moz-keyframes gradient-background {
+    0%{background-position:0% 75%}
+    50%{background-position:100% 26%}
+    100%{background-position:0% 75%}
+}
+@keyframes gradient-background {
+    0%{background-position:0% 75%}
+    50%{background-position:100% 26%}
+    100%{background-position:0% 75%}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card-login .card-body {
+    padding: 0 30px 0 10px;
+}
+
+.card .card-body {
+    padding: .9375rem 1.875rem
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem
+}
+
+.card-login .input-group {
+    padding-bottom: 7px;
+    margin: 27px 0 0 0;
+}
+.input-group .input-group-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px 0 15px;
+    background-color: transparent;
+    border-color: transparent
+}
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%
+}
+
+.input-group>.form-control {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0
+}
+
+.input-group>.form-control:focus {
+    z-index: 3
+}
+
+.input-group>.form-control:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0
+}
+
+.input-group-prepend {
+    display: flex
+}
+
+.input-group-prepend {
+    margin-right: -1px
+}
+
+.input-group-text {
+    display: flex;
+    align-items: center;
+    padding: .4375rem 0;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+    text-align: center;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0
+}
+
+.input-group>.input-group-prepend>.input-group-text {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.form-control {
+    background: no-repeat center bottom, center calc(100% - 1px);
+    background-size: 0 100%, 100% 100%;
+    border: 0;
+    height: 36px;
+    transition: background 0s ease-out;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
+    font-size: 14px
+}
+
+.form-control:focus {
+    background-size: 100% 100%, 100% 100%;
+    transition-duration: .3s;
+    box-shadow: none
+}
+
+.form-control::-moz-placeholder {
+    color: #494949;
+    font-weight: 400;
+    font-size: 14px
+}
+
+.form-control:-ms-input-placeholder {
+    color: #494949;
+    font-weight: 400;
+    font-size: 14px
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #494949;
+    font-weight: 400;
+    font-size: 14px
+}
+
+.form-control {
+    background-image: 
+        linear-gradient(to top, black 2px, rgba(53, 23, 171, 0) 2px), 
+        linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px)
+}
+
+.form-control:invalid {
+    background-image: 
+        linear-gradient(to top, #f44336 2px, rgba(244, 67, 54, 0) 2px), 
+        linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px)
+}
+
+.form-control:read-only {
+    background-image: 
+        linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px), 
+        linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px)
+}
+
+.form-control:disabled {
+    background-image: linear-gradient(to right, #d2d2d2 0, #d2d2d2 30%, transparent 30%, transparent 100%);
+    background-repeat: repeat-x;
+    background-size: 3px 1px
+}
+
+.form-control {
+    line-height: 1.1
+}
+.input-group>.form-control {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .4375rem 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #000;
+    background-color: rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border: 1px solid #d2d2d2;
+    border-radius: 0;
+    box-shadow: none;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+.form-control::-ms-expand {
+    background-color: transparent;
+    border: 0
+}
+
+.form-control:focus {
+    color: #000;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: #9acffa;
+    outline: 0;
+    box-shadow: none, 0 0 0 .2rem rgba(33, 150, 243, .25)
+}
+
+.form-control:disabled {
+    background-color: #e9ecef;
+    opacity: 1
+}
+.input-group>.form-control:focus {
+    z-index: 3
+}
+
+.input-group>.form-control:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0
+}
+
+.input-group-prepend {
+    display: flex
+}
+
+.input-group-prepend {
+    margin-right: -1px
+}
+
+.input-group>.input-group-prepend>.input-group-text {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.input-group .input-group-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px 0 15px;
+    background-color: transparent;
+    border-color: transparent
+}
+.input-group-text {
+    display: flex;
+    align-items: center;
+    padding: .4375rem 0;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+    text-align: center;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0
+}
+
+.input-group>.input-group-prepend>.input-group-text {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+form {
+    margin-bottom: 1.125rem;
+}
+
+.card form {
+    margin: 0
+}
+
+.mr-auto {
+    margin-right: auto !important
+}
+
+.ml-auto {
+    margin-left: auto !important
+}
+
+.page2-title {
+    display: inline;
+    font-family: PremiumUltra2;
+    font-size: 43px;
+    color: rgb(255, 255, 255);
+}
+
+.page2-title-container {
+    text-align: center;
+    margin: 0 0 20px 0
+}
+
+
+
+
+
+
+
+.subscribe-button {
+    display: inline;
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: relative;
+    margin: 4px 0 0 0;
+    padding: 0;
+}
+  
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed; /* or absolute */
+    top: 35%;
+    margin-left: 95px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+  
+/* When the inputs get focus, do something */
+.validate input[type=text]:focus, 
+.validate input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+  
+/* Set a style for the submit/login button */
+.validate .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+  
+/* Add a red background color to the cancel button */
+.validate .cancel {
+    background-color: red;
+}
+  
+/* Add some hover effects to buttons */
+.validate .btn:hover,
+.subscribe-button:hover {
+    opacity: 1;
+}
+
+
+
+
+.text {
+	color: white;
+	text-align: center;
+	letter-spacing: 0.05em;
+    font-family: "Days One";
+	font-size: 16px;
+	border: 2px solid gray;
+	padding: 10px 10px;
+    background-color: gray;
+}
+.text:hover {
+	color: black;
+	background-color: gray;
+	border: none;
+	cursor: pointer;
+    box-shadow: 8px 10px black;
+    font-family: "Days One";
+
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 45px;
+}
+
+#form-black-out {
+    display: none;
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-bottom: 101px;
+}
