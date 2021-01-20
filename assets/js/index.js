@@ -81,49 +81,69 @@ function form(){
                 Subscribe
             </p>
         </button>
+
+
+
         <div class="form-popup" id="myForm">
-            <div id="mc_embed_signup">
-                <form
-                    action="https://kirklandjaxon.us7.list-manage.com/subscribe/post?u=e1567b12b47b8c6e8b5bef2b5&amp;id=29f7f72ec1"
-                    method="post"
-                    id="mc-embedded-subscribe-form"
-                    name="mc-embedded-subscribe-form"
-                    class="validate"
-                    target="_blank"
-                    novalidate
-                >
-                    <div id="mc_embed_signup_scroll">
-                        <h2>Subscribe</h2>
-                        <div class="indicates-required">
-                            <span class="asterisk">*</span> indicates required
-                        </div>
 
-                        <div class="mc-field-group">
-                            <input class="form-control email" placeholder="name" type="text" value="" autocomplete="name" name="NAME" class="required" id="mce-NAME" required>
-                        </div>
+            <h1>Subscribe</h1>
+            <div class="indicates-required">
+                <span class="asterisk">*</span> indicates required
+            </div>
 
-                        <div class="mc-field-group">
-                            <input class="form-control email" placeholder="email" type="text" value="" autocomplete="email" name="EMAIL" class="required" id="mce-EMAIL" required>
-                        </div>
-
-                        <div class="mc-field-group">
-                            <input class="form-control email" placeholder="city" type="text" value="" autocomplete="city" name="CITY" class="required" id="mce-CITY" required>
-                        </div>
-
-                        <div id="mce-responses" class="clear">
-                            <div class="response" id="mce-error-response" style="display:none"></div>
-                            <div class="response" id="mce-success-response" style="display:none"></div>
-                        </div>
-                
-                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e1567b12b47b8c6e8b5bef2b5_29f7f72ec1" tabindex="-1" value=""></div>
-                        <div class="clear">
-                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn">
-                            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <form
+                                action="https://kirklandjaxon.us7.list-manage.com/subscribe/post?u=e1567b12b47b8c6e8b5bef2b5&amp;id=29f7f72ec1"
+                                method="post"
+                                id="mc-embedded-subscribe-form"
+                                name="mc-embedded-subscribe-form"
+                                class="validate"
+                                target="_blank"
+                                novalidate
+                            >
+                                <div id="mc_embed_signup_scroll">
+                                    <div class="mc-field-group">
+                                        <input class="form-control email" placeholder="name" type="text" value="" autocomplete="name" name="NAME" class="required" id="mce-NAME" required>
+                                    </div>
+            
+                                    <div class="mc-field-group">
+                                        <input class="form-control email" placeholder="email" type="text" value="" autocomplete="email" name="EMAIL" class="required" id="mce-EMAIL" required>
+                                    </div>
+            
+                                    <div class="mc-field-group">
+                                        <input class="form-control email" placeholder="city" type="text" value="" autocomplete="city" name="CITY" class="required" id="mce-CITY" required>
+                                    </div>
+            
+                                    <div id="mce-responses" class="clear">
+                                        <div class="response" id="mce-error-response" style="display:none"></div>
+                                        <div class="response" id="mce-success-response" style="display:none"></div>
+                                    </div>
+                            
+                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e1567b12b47b8c6e8b5bef2b5_29f7f72ec1" tabindex="-1" value=""></div>
+                                    <div class="clear">
+                                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-primary">
+                                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div>
+                                <?xml version="1.0" encoding="UTF-8"?>
+                                <svg width="67px" height="578px" viewBox="0 0 67 578" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+                                    <title>Path</title>
+                                    <desc>Created with Sketch.</desc>
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <path d="M11.3847656,-5.68434189e-14 C-7.44726562,36.7213542 5.14322917,126.757812 49.15625,270.109375 C70.9827986,341.199016 54.8877465,443.829224 0.87109375,578 L67,578 L67,-5.68434189e-14 L11.3847656,-5.68434189e-14 Z" id="Path" fill="#F9BC35"></path>
+                                    </g>
+                                </svg>
+                            </div>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     `
