@@ -1,0 +1,200 @@
+.form-dark .font-small {
+    font-size: 0.8rem; }
+  
+  .form-dark [type="radio"] + label,
+  .form-dark [type="checkbox"] + label {
+    font-size: 0.8rem; }
+  
+  .form-dark [type="checkbox"] + label:before {
+    top: 2px;
+    width: 15px;
+    height: 15px; }
+  
+  .form-dark .md-form label {
+    color: #fff; }
+  
+  .form-dark input[type=email]:focus:not([readonly]) {
+    border-bottom: 1px solid #00C851;
+    -webkit-box-shadow: 0 1px 0 0 #00C851;
+    box-shadow: 0 1px 0 0 #00C851; }
+  
+  .form-dark input[type=email]:focus:not([readonly]) + label {
+    color: #fff; }
+  
+  .form-dark input[type=password]:focus:not([readonly]) {
+    border-bottom: 1px solid #00C851;
+    -webkit-box-shadow: 0 1px 0 0 #00C851;
+    box-shadow: 0 1px 0 0 #00C851; }
+  
+  .form-dark input[type=password]:focus:not([readonly]) + label {
+    color: #fff; }
+  
+  .form-dark input[type="checkbox"] + label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    z-index: 0;
+    border: 1.5px solid #fff;
+    border-radius: 1px;
+    margin-top: 2px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
+  
+  .form-dark input[type="checkbox"]:checked + label:before {
+    top: -4px;
+    left: -3px;
+    width: 12px;
+    height: 22px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: transparent #00c851 #00c851 transparent;
+    -webkit-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    transform: rotate(40deg);
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%; }
+  
+  .form-dark .modal-header {
+      border-bottom: none;
+  }
+
+
+
+
+
+
+
+
+
+.index-page {
+    color: #fff;
+    text-align: center;
+}
+
+.gradient-background {
+    background: linear-gradient(106deg, #911edc, #2d0066, #000000, #6f6f6f, #680089);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: gradient-background 11s ease infinite;
+    -moz-animation: gradient-background 11s ease infinite;
+    animation: gradient-background 11s ease infinite;
+}
+
+@-webkit-keyframes gradient-background {
+    0%{background-position:0% 75%}
+    50%{background-position:100% 26%}
+    100%{background-position:0% 75%}
+}
+@-moz-keyframes gradient-background {
+    0%{background-position:0% 75%}
+    50%{background-position:100% 26%}
+    100%{background-position:0% 75%}
+}
+@keyframes gradient-background {
+    0%{background-position:0% 75%}
+    50%{background-position:100% 26%}
+    100%{background-position:0% 75%}
+}
+
+.page-header {
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    padding: 0;
+    border: 0;
+    display: flex;
+    align-items: center
+}
+
+.mr-auto {
+    margin-right: auto !important
+}
+
+
+.ml-auto {
+    margin-left: auto !important
+}
+
+.page2-title-container {
+    text-align: center;
+    margin: 0 0 20px 0
+}
+
+.page2-title {
+    display: inline;
+    font-family: PremiumUltra2;
+    font-size: 43px;
+    color: rgb(255, 255, 255);
+}
+
+.page4-title {
+    font-family: "Days One";
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    margin: 18px 0 20px 0;
+    color: white;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
+}
+
+a:focus,
+a:hover {
+    color: #fff;
+    text-shadow: 0 0 20px rgba(255, 255, 255, .6);
+    text-decoration: none
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.subscribe-button {
+    display: inline;
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: relative;
+    margin: 4px 0 0 0;
+    padding: 0;
+}
+
+.subscribe-button:hover {
+    opacity: 1;
+}
+
+.text {
+	color: white;
+	text-align: center;
+	letter-spacing: 0.05em;
+    font-family: "Days One";
+	font-size: 16px;
+	border: 2px solid gray;
+	padding: 10px 10px;
+    background-color: gray;
+}
+.text:hover {
+	color: black;
+	background-color: gray;
+	border: none;
+	cursor: pointer;
+    box-shadow: 8px 10px black;
+    font-family: "Days One";
+
+}
