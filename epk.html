@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kirkland Jackson EPK</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        display: flex;
+        flex-flow: column nowrap;
+        background-color: rgb(0, 0, 0);
+        padding: 25px 15%;
+        margin: 0;
+      }
+
+      .photo {
+        width: 80%;
+        height: 100%;
+        max-height: 350px;
+        align-self: center;
+        object-fit: contain;
+        margin: 25px 0 25px;
+        padding: 0;
+      }
+
+      h1 {
+        font-family: 'Caprasimo', cursive;
+        text-align: center;
+        font-size: 35px;
+        margin: 0 0 10px;
+        padding: 0;
+        color: rgb(233, 207, 118);
+      }
+
+      #telephone {
+        font-family: 'Caprasimo', cursive;
+        text-align: center;
+        font-size: 30px;
+        margin: 0 0 10px;
+        padding: 0;
+        color: rgb(233, 207, 118);
+        text-decoration: none;
+      }
+
+      p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        margin: 0 0 25px;
+        padding: 0;
+        color: rgb(233, 207, 118);
+      }
+
+      .video {
+        width: 100%; 
+        height: 400px;
+        align-self: center;
+        margin: 10px 0;
+        padding: 0;
+      }
+
+      .row {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 20px;
+      }
+
+      .column {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+      }
+
+      #p2 {
+        order: 1;
+      }
+
+      #p1 {
+        order: 2;
+      }
+
+      @media screen and (max-width: 1000px) {
+        .row {
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 20px;
+        }
+
+        #p2 {
+            order: 2;
+        }
+        
+        #p1 {
+            order: 1;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Kirkland Jackson</h1>
+
+    <a id="telephone" href="tel:407-485-0593">
+      407-485-0593
+    </a>
+
+    <div class="row">
+      <img src="images/photo_1.jpeg" class="photo"/>
+  
+      <div class="column">
+        <p>We are thrilled to introduce you to the captivating musical prowess of Kirkland Jackson, a gifted musician whose melodious journey began at the tender age of 12. With a humble spirit and a wealth of experience performing in various settings, Kirkland's love for music has graced restaurants, parties, and grand venues alike.</p>
+        <p>Starting his musical voyage as an integral part of a harmonious 4-part mariachi band, Kirkland's passion for creating soul-stirring melodies took root. As he embarked on his solo career, he embraced each opportunity to share his musical gift with the world.</p>
+        <p>At the youthful age of 27, Kirkland has had the honor of performing at renowned venues such as the iconic House of Blues and the Hard Rock Cafe. Yet, he remains grounded and committed to his craft, always seeking to bring joy to every performance.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column" id="p2">
+        <p>Presently, Kirkland is an active presence in the vibrant music scene of Central Florida, enchanting audiences at dozens of restaurants, bars, and venues. His ability to establish an instant connection with diverse audiences is a testament to his genuine love for music and his innate talent.</p>
+        <p>Kirkland's repertoire is a harmonious blend of genres, spanning across musical eras. From cherished oldies to contemporary top 40 hits, heartfelt country tunes, soulful R&B rhythms, electrifying rock and roll classics, and the enchanting sounds of mariachi, he weaves together a tapestry of melodies that resonate with every listener.</p>
+        <p>One of the most remarkable qualities of Kirkland's performances is the positive and energetic vibe he brings to every venue. His genuine enthusiasm for music creates an inviting atmosphere, making every gathering an unforgettable experience.</p>
+      </div>
+
+      <img src="images/photo_2.jpeg" class="photo" id="p1"/>
+    </div>
+
+    <iframe src="https://www.youtube.com/embed/xSl7VcbvjQQ" class="video"></iframe>
+
+    <iframe src="https://www.youtube.com/embed/lOUGjI7nChk" class="video"></iframe>
+
+    <iframe src="https://www.youtube.com/embed/ldkkaqZ7w_s" class="video"></iframe>
+
+
+  </body>
+</html>
